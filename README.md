@@ -25,7 +25,10 @@ $ gulp
 
 Test
 -----
-
+```
+sudo chown www-data:www-data -R app/cache
+sudo chown www-data:www-data -R app/logs
+```
 ```bash
 $ php app/console server:run
 ```
