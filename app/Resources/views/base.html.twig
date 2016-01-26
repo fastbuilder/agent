@@ -7,7 +7,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Secret blog{% endblock %}</title>
+        <title>{% block title %}Symfony Demo application{% endblock %}</title>
 
         {% block stylesheets %}
         {# uncomment the following lines to compile SCSS assets with Assetic
@@ -27,7 +27,7 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
 
-    <body>
+    <body id="{% block body_id %}{% endblock %}">
 
         {% block header %}
             <header>
@@ -35,7 +35,7 @@
                     <div class="container">
                         <div class="navbar-header">
                             <a class="navbar-brand" href="{{ path('homepage') }}">
-                                Landing
+                                Symfony Demo
                             </a>
 
                             <button type="button" class="navbar-toggle"
@@ -94,16 +94,32 @@
             </header>
         {% endblock %}
 
-        {% block body %}
+        <div class="container body-container">
+            {% block body %}
                 <div class="row">
                     <div id="main" class="col-sm-9">
                         {{ include('default/_flash_messages.html.twig') }}
 
                         {% block main %}{% endblock %}
                     </div>
+
+                    <div id="sidebar" class="col-sm-3">
+                        {% block sidebar %}
+                            {#<div class="section about">#}
+                                {#<div class="well well-lg">#}
+                                    {#<p>#}
+                                        {#{{ 'help.app_description'|trans|raw }}#}
+                                    {#</p>#}
+                                    {#<p>#}
+                                        {#{{ 'help.more_information'|trans|raw }}#}
+                                    {#</p>#}
+                                {#</div>#}
+                            {#</div>#}
+                        {% endblock %}
+                    </div>
                 </div>
             {% endblock %}
-
+        </div>
 
         {% block footer %}
             <footer>
