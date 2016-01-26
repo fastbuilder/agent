@@ -20,16 +20,15 @@ $ composer install
 $ npm install
 $ bower install
 $ gulp
+$ sudo chown www-data:www-data -R app/cache && sudo chmod -R 777 app/cache && sudo chown www-data:www-data -R app/logs
 ```
 
 
-Test
+Use
 -----
-```
-sudo chown www-data:www-data -R app/cache && sudo chmod -R 777 app/cache
-sudo chown www-data:www-data -R app/logs
-```
+
 ```bash
+
 $ php app/console server:run
 ```
-localhost:8000
+
