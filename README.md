@@ -26,7 +26,7 @@ $ gulp
 Test
 -----
 ```
-sudo chown www-data:www-data -R app/cache
+sudo chown www-data:www-data -R app/cache && sudo chmod -R 777 app/cache
 sudo chown www-data:www-data -R app/logs
 ```
 ```bash
