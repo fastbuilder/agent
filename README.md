@@ -20,7 +20,7 @@ $ composer install
 $ npm install
 $ bower install
 $ gulp
-$ sudo chown www-data:www-data -R app/cache && sudo chmod -R 777 app/cache && sudo chown www-data:www-data -R app/logs
+$ sudo chmod -R 777 app/cache && sudo chmod -R 777 app/logs
 ```
 
 
