@@ -1,0 +1,15 @@
+{
+    "name": "agent",
+    "description": "",
+    "private": true,
+    "dependencies": {
+        "gulp": "=3.9.0",
+        "bower": "=1.5.2",
+        "gulp-if": "*",
+        "gulp-uglify":"*",
+        "gulp-uglifycss":"*",
+        "gulp-less":"*",
+        "gulp-concat":"*",
+        "gulp-sourcemaps":"*"
+    }
+}

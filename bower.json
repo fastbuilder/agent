@@ -1,0 +1,12 @@
+{
+    "name": "agent",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "bootstrap" : ">=3.0.0",
+        "jquery"    : "*"
+    }
+}
